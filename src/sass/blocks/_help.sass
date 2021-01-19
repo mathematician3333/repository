@@ -1,0 +1,62 @@
+.help
+    &-title
+        background-color: $main-color
+        height: 280px
+        font-size: 32px
+        line-height: 50px
+        font-weight: 300
+        color: $text-color
+        text-align: center
+        padding-top: 55px
+        font-family: 'Museo Sans Light'
+        margin-bottom: 100px
+    &-block
+        display: flex
+        justify-content: space-around
+        margin-bottom: 100px
+        &__img
+            position: relative
+            width: 370px
+            height: 410px
+            
+.help-text
+    position: absolute
+    top: 27px
+    left: 26px
+    right: 64px
+    ont-size: 16px
+    line-height: 23px
+    font-weight: 300
+    color: $text-color
+    font-family: 'Museo Sans Light'
+    &__bold
+        +bold
+@media (max-width: 1200px)
+    .help
+        &-block
+           flex-direction: column
+           align-items: center
+           &__img
+               margin-bottom: 30px
+@media (max-width: 768px) 
+    .help-title
+        height: 231px
+        font-size: 18px
+        line-height: 1.2
+        font-weight: 300
+        margin-bottom: 30px
+    .help-block
+        margin-bottom: 50px
+    .help-block__img
+        margin-bottom: 30px
+        width: 272px
+        height: 300px
+    .help-text
+        font-size: 12px              
+        line-height: 16px
+        font-weight: 300           
+               
+        
+            
+
+        

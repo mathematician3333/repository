@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+}
+body .conteiner {
+  width: 1170px;
+  margin: auto;
+}
+
+.button {
+  border-radius: 10px;
+  background-color: #ffd200;
+}
