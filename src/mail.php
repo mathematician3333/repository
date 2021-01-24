@@ -6,7 +6,7 @@ $mail->CharSet = 'utf-8';
 
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
-$email = $_POST['user_email'];
+
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -29,7 +29,7 @@ $mail->addAddress('sm1rn0v-alexandr@rambler.ru');     // Кому будет у�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
+$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
